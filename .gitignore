@@ -1,4 +1,5 @@
 *.lock
 /downloads
 /templates
+/venv
 /.vscode
