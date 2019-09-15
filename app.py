@@ -26,8 +26,7 @@ def image_search():
 	arguments = {"keywords":search_argument,"limit":number_images,"no_directory":True,"no_download":True}
 	# Retrieves images to paths
 	paths = response.download(arguments)
-
-	return jsonify({"image":paths})
+	return jsonify(paths)
 
 @app.route('/imgapi/image_download', methods=['GET'])
 def image_download():
